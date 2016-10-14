@@ -40,10 +40,10 @@ h1{
 	font-family: sans-serif;
 	color: #9BE2B1;
 	font-size: 60px;
-	letter-spacing: normal;
+	letter-spacing: .1em;
 	text-align: center;
-	line-height: 37px;
-	padding-top: 2em;
+	line-height: 60px;
+	padding-top: 3em;
 	z-index: 1001;
 
 	margin: 0;
