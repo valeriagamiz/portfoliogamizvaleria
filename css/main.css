@@ -38,16 +38,14 @@ header{
 
 h1{
 	font-family: sans-serif;
-	color: #9BE2B1;
+	color: #007DA4;
 	font-size: 60px;
-	letter-spacing: .1em;
 	text-align: center;
 	line-height: 60px;
-	z-index: 1001;
-
+	z-index: 1;
 	margin: 0;
 	 position: absolute;
-	 top: 50%;
+	 top: 15%;
 	 left: 50%;
 	 margin-right: -50%;
 	 transform: translate(-50%, -50%) }
@@ -55,7 +53,6 @@ h1{
 
 h2{
 	text-align: center;
-
 }
 
 h3{
@@ -89,12 +86,13 @@ h4{
 
 h5{
 	font-family: sans-serif;
-	color: white;;
-	font-size: 18px;
+	color: white;
+	font-size: 30px;
 	text-align: center;
 	line-height: 37px;
-	padding-top: 2em;
+	padding-top: 1em;
 	margin:0;
+	color: #9BE2B1;
 }
 
 h6{
@@ -105,12 +103,20 @@ h6{
 
 .banner{
 	position: relative;
-	margin-top: -425px;
+	margin-bottom: 20px;
 	width: 1920px;
-	height: 1080px;
-	background-color:#BF5D57;
-	/**	background: url(../images/banner.jpg) no-repeat;**/
+	height: 800px;
+	background-color:;
+	background: url(../images/banner.jpg) no-repeat;
 	background-size: cover;
+
+	/*.banner{
+		position: relative;
+		margin-top: -600px;
+		width: 1920px;
+		height: 700px;
+	}*/
+
 }
 
 .nav{
@@ -129,7 +135,7 @@ h6{
 	padding-top: 2rem;
 }
 
-a{
+a {
 	color: white;
 	text-decoration: none;
 }
@@ -163,6 +169,7 @@ a:hover {
 .square{
 	background-color: black;
 	padding-bottom: 2em;
+	margin-top: -2em;
 }
 
 .square2{
@@ -210,11 +217,28 @@ p {
 	border: none;
 	color: white;
 	background-color: #9BE2B1;
+	z-index: 1;
 }
 
-.skills {
-	text-align: center;
+.btn:hover{
+	background-color: #007DA4;
+}
+
+.btn1 {
+  display: block;
+	font-size: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20%;
+	height: 50px;
+	border: none;
 	color: white;
+	background-color: #007DA4;
+	z-index: 1;
+}
+
+.btn1:hover{
+	background-color: #007DA4;
 }
 
 .backgroundskills {
@@ -222,9 +246,24 @@ p {
 }
 
 .tools {
+	text-decoration: none;
 	text-align: center;
 	margin: 0;
 	padding: 0;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	font-size: 2em;
+
+}
+
+.skills {
+	text-align: center;
+	color: white;
+}
+
+.tool-icon{
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .form {
@@ -232,9 +271,7 @@ p {
 	text-align: center;
 	margin: 0;
 	padding: 4rem;
-	background-color: black;
-	color: white;
-	background-color: #BF5D57;
+	background-color: white;
 	/*background: url(../images/stars.jpg) no-repeat;*/
 	background-size: cover;
 }
@@ -249,6 +286,33 @@ p {
 	color: white;
 }
 
+.stuff{
+  padding: 1em;
+	text-align: center;
+	color: black;
+	background-color:
+}
+
+.info{
+	color: black;
+	font-size: 1em;
+	font-family: sans-serif;
+}
+
+#LETSCHAT{
+	color: #007DA4;
+}
+
+#email{
+	color: #BF5D57;
+}
+
+#email:hover{
+	color: #9BE2B1;
+	background-color: black;
+
+}
+
 footer{
 	padding-top: 3rem;
 	padding-bottom: 3rem;
@@ -260,10 +324,6 @@ footer{
 }
 
 @media only screen and (min-width: 25em) {
-
-h1 {
-	padding-top: 3em;
-}
 
 .portfoliolink{
 		padding-top: 8em;
@@ -294,11 +354,17 @@ h6 span {
 	color: blue;
 }
 
+
+@media only screen and (min-width: 25em) {
+	h1 {
+		padding-top: 1em;
+	}
+
 @media only screen and (min-width: 38em) {
 
-h1 {
-	padding-top: 0;
-}
+	h1{
+		padding-top: 7em;
+	}
 
 h2 {
 	text-align: center;
@@ -309,6 +375,7 @@ h2 {
 .h3 {
 	text-align: left;
 }
+
 
 h6 {
 	padding-left: 3em;
@@ -347,10 +414,33 @@ h6 {
 			width: 100%;
 		}
 
+		.myphoto{
+			padding-top: 5em;
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+		}
+
+		.myphotowrap{
+			position:relative;
+		}
+
+		.btn1 {
+			padding-top:0;
+			margin-top: 25em;
+		}
+
+		.btn1:hover{
+			background-color: #007DA4;
+		}
+
 }
 
 @media only screen and (min-width: 60em) {
 
+h1{
+	padding-top: 7em;
+}
 	.logo{
 		width: 3%;
 	}
@@ -375,4 +465,21 @@ h6{
 	padding-right: 14em;
 	text-align: center;
 	}
+
+.myphoto{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	position: static;
+}
+
+}
+
+@media only screen and (min-width: 80em) {
+
+	myphoto{
+		padding-right: 10em;
+		width: 50%;
+	}
+
 }
