@@ -1,0 +1,23 @@
+ # humans.txt.org
+
+ # DESIGNER
+
+ Designer & Developer: Valeria Gamiz Antunez <gamizvaleria@gmail.com>
+ Site: http://gamizvaleria.column
+ Twitter: @tarolitas
+ Location: Ottawa, Canada
+
+ ---
+
+ # THANKS
+
+
+
+ - - -
+
+ # TECHNOLOGY
+
+ ## Software
+
+ - Atom
+ - Github
