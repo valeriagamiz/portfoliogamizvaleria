@@ -1,499 +1,560 @@
----
----
 @charset "utf-8";
-
-@-moz-viewport { width: device-width; scale: 1; }
-@-ms-viewport { width: device-width; scale: 1; }
-@-o-viewport { width: device-width; scale: 1; }
-@-webkit-viewport { width: device-width; scale: 1; }
-@viewport { width: device-width; scale: 1; }
-
-@font-face {
-		font-family: ArcaMajoraBold;
-		src: url('{{site.baseurl}}/fonts/ArcaMajora3-Bold.woff');
+@-moz-viewport {
+	width: device-width;
+	scale: 1;
 }
-
+@-ms-viewport {
+	width: device-width;
+	scale: 1;
+}
+@-o-viewport {
+	width: device-width;
+	scale: 1;
+}
+@-webkit-viewport {
+	width: device-width;
+	scale: 1;
+}
+@viewport {
+	width: device-width;
+	scale: 1;
+}
 @font-face {
-		font-family: ArcaMajoraHeavy;
-		src: url('{{site.baseurl}}/fonts/ArcaMajora3-Heavy.woff');
+	font-family: ArcaMajoraBold;
+	src        : url('{{site.baseurl}}/fonts/ArcaMajora3-Bold.woff');
+}
+@font-face {
+	font-family: ArcaMajoraHeavy;
+	src        : url('{{site.baseurl}}/fonts/ArcaMajora3-Heavy.woff');
 }
 
 .hidden {
-	display: none;
+	display   : none;
 	visibility: hidden;
 }
 
 * {
-	-moz-box-sizing: border-box;
+	-moz-box-sizing   : border-box;
 	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	font-family: ArcaMajoraBold, sans-serif;
+	box-sizing        : border-box;
+	font-family       : ArcaMajoraBold, sans-serif;
 }
 
 html {
-	-moz-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust   : 100%;
+	-ms-text-size-adjust    : 100%;
 	-webkit-text-size-adjust: 100%;
-	text-size-adjust: 100%;
-
-    font-size: 100%;
+	text-size-adjust        : 100%;
+	font-size               : 100%;
 }
 
 body {
-    font-family: sans-serif
-		margin:0;
-		padding:0;
+	font-family    : sans-serif;
+	margin         : 0;
+	padding        : 0;
 	/**	background: url("../images/basiccactus.jpg")no-repeat center center;**/
-		background-size: cover;
-}
-
-header{
-		width: 100%;
-		position: absolute;
-		background-color: black;
-		z-index: 1000;
-}
-
-h1{
-	color: #007DA4;
-	font-size: 60px;
-	text-align: center;
-	line-height: 60px;
-	z-index: 1;
-	margin: 0;
-	 position: absolute;
-	 top: 15%;
-	 left: 50%;
-	 margin-right: -50%;
-	 transform: translate(-50%, -50%) }
-}
-
-h2{
-
-	color: #007DA4;
-	text-align: center;
-}
-
-
-
-h3{
-
-	color: black;
-	font-size: 25px;
-	letter-spacing: normal;
-	line-height: 37px;
-	margin:0;
-	margin-left: .5em;
-	color: #007DA4;
-	text-align: left;
-}
-
-.h3orange {
-	color: #BF5D57;
-	padding-top: 1em;
-
-}
-
-h4{
-	color: white;
-	text-decoration: underline;
-	font-size: 18px;
-	text-align: center;
-	line-height: 37px;
-	padding-top: 2em;
-	margin:0;
-}
-
-h5{
-	color: white;
-	font-size: 30px;
-	text-align: center;
-	line-height: 37px;
-	padding-top: 1em;
-	margin:0;
-	color: #9BE2B1;
-}
-
-h6{
-	font-size: 1.5em;
-	line-height: 1.3em;
-	margin: 1rem;
-}
-
-.banner{
-	position: relative;
-	margin-bottom: 20px;
-	width: 1920px;
-	height: 100vh;
-	background: url(../images/banner.jpg) no-repeat;
 	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-
 }
 
-.nav{
-	font-size: 15px;
-	width: 100%;
-	text-align: center;
-	text-decoration: none;
-	padding-bottom: 1rem;
-	color: white;
+header {
+	width           : 100%;
+	position        : absolute;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index         : 1000;
+}
 
+.wordmark {
+	top: 10%;
+}
+
+h1 {
+	font-size : 1.2em;
+	color     : #12EDFF;
+	text-align: center;
+	z-index   : 1;
+	margin    : 0;
+}
+
+h2 {
+	color     : #007DA4;
+	text-align: center;
+}
+
+h3 {
+	color         : black;
+	font-size     : 25px;
+	letter-spacing: normal;
+	line-height   : 37px;
+	margin        : 0 0 0 0.5em;
+	color         : #007DA4;
+	text-align    : left;
+}
+
+.h3blue {
+	margin-top     : 1em;
+	color          : #12EDFF;
+	margin-left    : -3em;
+	padding-left   : 3.2em;
+	background-size: auto;
+	font-size      : 74px;
+	line-height    : 76px;
+}
+
+h4 {
+	color          : white;
+	text-decoration: underline;
+	font-size      : 18px;
+	text-align     : center;
+	line-height    : 37px;
+	padding-top    : 2em;
+	margin         : 0;
+}
+
+h5 {
+	color      : white;
+	font-size  : 30px;
+	text-align : center;
+	line-height: 37px;
+	padding-top: 1em;
+	margin     : 0;
+	color      : #12EDFF;
+}
+
+h6 {
+	font-size  : 1.5em;
+	line-height: 1.3em;
+	margin     : 1rem;
+}
+
+.banner {
+	position       : relative;
+	margin-bottom  : 20px;
+	width          : 2500px;
+	height         : 100vh;
+	background     : url('../images/banner-cacti.jpg') no-repeat;
+	background-size: cover;
+	display        : flex;
+	flex-direction : column;
+	justify-content: center;
+	align-items    : center;
+}
+
+.nav {
+	font-size      : 15px;
+	width          : 100%;
+	text-align     : center;
+	text-decoration: none;
+	padding-bottom : 1rem;
+	color          : white;
 }
 
 .nav li {
-	list-style: none;
+	list-style : none;
 	padding-top: 2rem;
 }
 
 a {
-	color: white;
+	color          : white;
 	text-decoration: none;
 }
 
 a:link {
-    text-decoration: none;
-		color: white;
-		text-align: center;
+	text-decoration: none;
+	color          : white;
+	text-align     : center;
 }
 
 .link:hover {
-    color:  #9BE2B1;
-		width: 100%;
-		text-align: center;
-		margin: 0;
-		text-decoration: none;
+	color          : #12EDFF;
+	width          : 100%;
+	text-align     : center;
+	margin         : 0;
+	text-decoration: none;
 }
 
 .logo {
-	width: 10%;
-	display: block;
-	margin: auto;
-	padding-top: 1.3em;
+	width         : 10%;
+	display       : block;
+	margin        : auto;
+	padding-top   : 1.3em;
 	padding-bottom: 1rem;
 }
 
 .logo img {
-	width:90%;
+	width: 100%;
 }
 
-.square{
+.square {
 	background-color: black;
-	padding-bottom: 2em;
-	margin-top: -2em;
+	padding-bottom  : 2em;
+	margin-top      : -2em;
 }
 
-.square2{
+.square2 {
 	background-color: grey;
-	padding-top: 10rem;
-	height: 20em;
-	border-color: white solid 3px;
+	padding-top     : 10rem;
+	height          : 20em;
+	border-color    : white solid 3px;
 }
 
-.portfoliolink{
+.portfoliolink {
 	padding-top: 8em;
 }
 
-
 .grid {
-	width: 100%;
+	width : 100%;
 	margin: 0;
 }
 
-
 .description {
-	font-family: Domine,sans-serif;
-	margin-top: 1rem;
-	color: white;
-	font-size: 12px;
-	text-align: center;
+	font-family: 'Slabo 27px', serif;
+	margin-top : 0;
+	color      : white;
+	font-size  : 12px;
+	text-align : center;
+	width      : 100%;
+	text-align : center;
 }
 
 p {
-	font-family: ArcaMajoraBold , sans-serif;
-	font-size: 14px;
-	padding: 1em;
-	line-height:1.8em;
+	font-family: 'Slabo 27px', serif;
+	font-size  : 14px;
+	padding    : 1em;
+	line-height: 1.8em;
 }
-
 
 .btn {
-  display: block;
-	font-size: 1em;
-	margin: 0 auto;
-	width: 40%;
-	height: 50px;
-	line-height: 50px;
-	border: none;
-	color: white;
-	background-color: #9BE2B1;
-	z-index: 1;
+	display         : block;
+	font-size       : 1em;
+	margin          : 0 auto;
+	width           : 40%;
+	height          : 50px;
+	line-height     : 50px;
+	border          : none;
+	color           : white;
+	background-color: #12EDFF;
+	z-index         : 1;
 }
 
-.btn:hover{
-	background-color: #007DA4;
+.btn:hover {
+	background-color: black;
+	border          : 2px dashed white;
+	color           : #12EDFF;
 }
 
 .btn1 {
-  display: block;
-	font-size: 1em;
-	margin-left: auto;
-	margin-right: auto;
-	width: 20%;
-	height: 50px;
-	border: none;
-	color: white;
-	background-color: #007DA4;
-	z-index: 1;
+	display         : block;
+	font-size       : 1em;
+	margin-left     : auto;
+	margin-right    : auto;
+	width           : 20%;
+	height          : 50px;
+	border          : none;
+	color           : white;
+	background-color: #12EDFF;
+	z-index         : 1;
 }
 
-.btn1:hover{
-	background-color: #007DA4;
+.btn1:hover {
+	background-color: black;
+	border          : white 2px;
+	border-style    : dashed;
 }
 
 .backgroundskills {
-		background-color: black;
+	background-color: black;
 }
 
 .tools {
 	text-decoration: none;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	padding-top: 1em;
-	padding-bottom: 2em;
-	font-size: 2em;
-
+	text-align     : center;
+	margin         : 0;
+	padding        : 1em 0 2em;
+	font-size      : 2em;
 }
 
 .skills {
-	text-align: center;
-	color: white;
+	text-align : center;
+	color      : white;
 	font-family: ArcaMajoraBold;
 }
 
-.tool-icon{
-	margin-left: auto;
+.tool-icon {
+	margin-left : auto;
 	margin-right: auto;
 }
 
 .form {
-	display: block;
-	text-align: center;
-	margin: 0;
-	padding: 4rem;
+	display         : block;
+	text-align      : center;
+	margin          : 0;
+	padding         : 4rem;
 	background-color: white;
 	/*background: url(../images/stars.jpg) no-repeat;*/
-	background-size: cover;
+	background-size : cover;
 }
-.socialmedia{
-	color: blue;
+
+.socialmedia {
+	text-align : center;
+	padding-top: 1em;
+	font-size  : 20px;
 }
 
 .contact {
-	text-align: center;
+	text-align    : center;
 	padding-bottom: 2em;
-	font-size: 3em;
-	color: white;
+	font-size     : 3em;
+	color         : white;
 }
 
-.stuff{
-  padding: 1em;
-	text-align: center;
-	color: black;
+.stuff {
+	padding         : 1em;
+	text-align      : center;
+	color           : black;
 	background-color:
 }
 
-.info{
-	color: black;
-	font-size: 1em;
+.info {
+	color      : black;
+	font-size  : 1em;
 	font-family: sans-serif;
 }
 
-#LETSCHAT{
-	color: #007DA4;
+#LETSCHAT {
+	color: #12EDFF;
 }
 
-#email{
-	color: #BF5D57;
+#email {
+	color      : #12EDFF;
+	padding-top: -3em;
 }
 
-#email:hover{
-	color: #9BE2B1;
+#email:hover {
+	color           : white;
 	background-color: black;
-
 }
 
-footer{
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+.location {
+	font-family: ArcaMajoraBold;
+	text-align : center;
+	font-size  : 15px;
+	color      : grey;
+}
+
+footer {
+	padding-top     : 1rem;
 	background-color: black;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-
+	justify-content : center;
+	align-items     : center;
+	display         : flex;
+	width           : 100vw;
 }
 
+.myphoto {
+	max-width: 100%;
+}
+
+.myphotowrap {
+	position: relative;
+}
 @media only screen and (min-width: 25em) {
-
-.portfoliolink{
+	.portfoliolink {
 		padding-top: 8em;
-}
+	}
 
-
-.square2 {
-	background-color: grey;
-	padding-top: 5rem;
-	margin-top: 1rem;
-	height: 20em;
-	border-color: white solid 3px;
-}
-
-
-.uxpic {
-	margin-top:5px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 100%;
-}
-
-h6 {
-	text-align: left;
-}
-
-h6 span {
-	color: blue;
-}
-
-
-@media only screen and (min-width: 25em) {
 	h1 {
-		padding-top: 1em;
-	}
-
-@media only screen and (min-width: 38em) {
-
-	h1{
-		padding-top: 7em;
-	}
-
-h2 {
-	text-align: center;
-	margin-top: 5rem;
-	padding-top: 4rem;
-}
-
-.h3 {
-	text-align: left;
-}
-
-
-h6 {
-	padding-left: 3em;
-	padding-right: 3em;
-	text-align: center;
-}
-	.logo{
-		width: 5%;
-		display: block;
-		margin-top: 2rem;
-		margin-bottom: 1rem;
-		margin-left: 2rem;
-		float: left;
-		padding: 0;
-		display: block;
-	}
-
-		.nav{
-			font-size: 15px;
-			margin: 0;
-			font-family: sans-serif;
-			float: right;
-			width: 50%;
-			text-align: right
-		}
-
-		.nav li{
-			display: inline-block;
-			text-align: left;
-			padding-right: 2em;
-		}
-
-
-		.uxpic{
-			margin-top:5px;
-			width: 100%;
-		}
-
-		.myphoto{
-			padding-top: 5em;
-			width: 100%;
-			position: absolute;
-			bottom: 0;
-		}
-
-		.myphotowrap{
-			position:relative;
-		}
-
-		.btn1 {
-			padding-top:0;
-			margin-top: 25em;
-		}
-
-		.btn1:hover{
-			background-color: #007DA4;
-		}
-
-}
-
-@media only screen and (min-width: 60em) {
-
-h1{
-	padding-top: 7em;
-}
-	.logo{
-		width: 3%;
-	}
-	.description {
-		padding-left: 6em;
-		padding-right: 6em;
-		margin-top: 1rem;
-		color: white;
-		font-size: 12px;
-		text-align: center;
-	}
-
-	.title-description{
-		padding-left: 18em;
-		padding-right: 18em;
+		width    : 100%;
 		font-size: 1em;
 	}
 
-
-h6{
-	padding-left: 14em;
-	padding-right: 14em;
-	text-align: center;
+	.square2 {
+		background-color: grey;
+		padding-top     : 5rem;
+		margin-top      : 1rem;
+		height          : 20em;
+		border-color    : white solid 3px;
 	}
 
-.myphoto{
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	position: static;
-}
-
-}
-
-@media only screen and (min-width: 80em) {
-
-	myphoto{
-		padding-right: 10em;
-		width: 50%;
+	.uxpic {
+		margin-top  : 5px;
+		margin-left : auto;
+		margin-right: auto;
+		width       : 100%;
 	}
 
+	h6 {
+		text-align: left;
+	}
+
+	h6 span {
+		color: blue;
+	}
 }
+@media only screen and (min-width: 25em) {
+	header {
+		margin : 0;
+		padding: 0;
+	}
+
+	.description {
+		font-size: 15px;
+	}
+
+	h1 {
+		padding-top: 1em;
+	}
+}
+@media only screen and (min-width: 38em) {
+	.wordmark {
+		width: 80%;
+	}
+
+	.description {
+		padding-left : 2em;
+		padding-right: 2em;
+		color        : white;
+		font-size    : 15px;
+		text-align   : center;
+	}
+
+	h1 {
+		top      : 56%;
+		width    : 100%;
+		font-size: 2em;
+	}
+
+	h2 {
+		text-align : center;
+		margin-top : 5rem;
+		padding-top: 4rem;
+	}
+
+	.h3 {
+		text-align: left;
+	}
+
+	h6 {
+		padding-left : 3em;
+		padding-right: 3em;
+		text-align   : center;
+	}
+
+	.logo {
+		width        : 5%;
+		display      : block;
+		margin-top   : 2rem;
+		margin-bottom: 1rem;
+		margin-left  : 2rem;
+		float        : left;
+		padding      : 0;
+		display      : block;
+	}
+
+	.nav {
+		font-size  : 15px;
+		margin     : 0;
+		font-family: sans-serif;
+		float      : right;
+		width      : 50%;
+		text-align : right;
+	}
+
+	.nav li {
+		display      : inline-block;
+		text-align   : left;
+		padding-right: 2em;
+	}
+
+	.uxpic {
+		margin-top: 5px;
+		width     : 100%;
+	}
+
+	.btn1 {
+		padding-top: 0;
+		margin-top : 25em;
+	}
+
+	.btn1:hover {
+		background-color: #007DA4;
+	}
+
+	.myphoto {
+		position : absolute;
+		max-width: 40%;
+		bottom   : 0;
+	}
+	@media only screen and (min-width:60em) {
+		h1 {
+			top      : 60%;
+			font-size: 2em;
+		}
+
+		.logo {
+			width: 3%;
+		}
+
+		.description {
+			padding-left : 3em;
+			padding-right: 3em;
+			color        : white;
+			font-size    : 17px;
+			text-align   : center;
+		}
+
+		.title-description {
+			padding-left : 18em;
+			padding-right: 18em;
+			font-size    : 1em;
+		}
+
+		h6 {
+			padding-left : 14em;
+			padding-right: 14em;
+			text-align   : center;
+		}
+
+		.myphoto {
+			max-width: 30%;
+		}
+		/*.myphoto {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        position: static;
+    }*/
+	}
+	@media only screen and (min-width: 80em) {
+		.wordmark {
+			width: 40%;
+		}
+
+		#email {
+			font-size: 20px;
+		}
+
+		h4 {
+			font-size: 1.3rem;
+		}
+
+		p {
+			font-size: 1.3rem;
+		}
+
+		.description {
+			padding-left : 7em;
+			padding-right: 7em;
+			color        : white;
+			font-size    : 20px;
+			text-align   : center;
+		}
+
+		h1 {
+			top      : 60%;
+			font-size: 2em;
+		}
+
+		.myphoto {
+			width: 400px;
+		}
+	}
