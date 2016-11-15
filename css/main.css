@@ -49,7 +49,7 @@ html {
 }
 
 body {
-	font-family    : sans-serif;
+	font-family    : ArcaMajoraBold sans-serif;
 	margin         : 0;
 	padding        : 0;
 	/**	background: url("../images/basiccactus.jpg")no-repeat center center;**/
@@ -64,19 +64,29 @@ header {
 }
 
 .wordmark {
-	top: 10%;
+	top: 40%;
+	width: 70%;
 }
 
 h1 {
-	font-size : 1.2em;
+	font-size : 1em;
 	color     : #12EDFF;
 	text-align: center;
 	z-index   : 1;
 	margin    : 0;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+#uxuih1 {
+	padding-top: 50%;
+}
+
+#black {
+	color: black;
 }
 
 h2 {
-	color     : #007DA4;
 	text-align: center;
 }
 
@@ -139,7 +149,22 @@ h6 {
 	align-items    : center;
 }
 
+.banner-uxui {
+	position       : relative;
+	margin-bottom  : 20px;
+	width          : 2500px;
+	height         : 100vh;
+	background     : url('../images/uxui-banner.jpg') no-repeat;
+	background-size: cover;
+	display        : flex;
+	flex-direction : column;
+	justify-content: center;
+	align-items    : center;
+}
+
+
 .nav {
+	font-family    : ArcaMajoraBold sans-serif;
 	font-size      : 15px;
 	width          : 100%;
 	text-align     : center;
@@ -221,6 +246,15 @@ p {
 	font-size  : 14px;
 	padding    : 1em;
 	line-height: 1.8em;
+}
+
+.p1 {
+	padding-left: 3rem;
+	padding-right: 3rem;
+	text-align: center;
+	padding-top: 0;
+	line-height: 1.8em;
+	color      : white;
 }
 
 .btn {
@@ -320,7 +354,13 @@ p {
 	font-family: sans-serif;
 }
 
-#LETSCHAT {
+.parkhere{
+	max-width:  100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#letschat {
 	color: #12EDFF;
 }
 
@@ -335,10 +375,9 @@ p {
 }
 
 .location {
-	font-family: ArcaMajoraBold;
 	text-align : center;
 	font-size  : 15px;
-	color      : grey;
+	color      : lightgray;
 }
 
 footer {
@@ -358,6 +397,7 @@ footer {
 	position: relative;
 }
 @media only screen and (min-width: 25em) {
+
 	.portfoliolink {
 		padding-top: 8em;
 	}
@@ -365,6 +405,13 @@ footer {
 	h1 {
 		width    : 100%;
 		font-size: 1em;
+	}
+
+	.p1 {
+		font-size: 20px;
+		padding-left: 2em;
+		padding-right: 2em;
+		}
 	}
 
 	.square2 {
@@ -390,7 +437,16 @@ footer {
 		color: blue;
 	}
 }
+
 @media only screen and (min-width: 25em) {
+	.wordmark {
+		padding-top: 10rem;
+	}
+
+	h4 {
+		text-align: center;
+	}
+
 	header {
 		margin : 0;
 		padding: 0;
@@ -421,6 +477,15 @@ footer {
 		top      : 56%;
 		width    : 100%;
 		font-size: 2em;
+	}
+
+	#uxuih1 {
+		padding-top: 1em;
+	}
+
+	.p1{
+		padding-left: 8em;
+		padding-right: 8em ;
 	}
 
 	h2 {
@@ -494,11 +559,15 @@ footer {
 			width: 3%;
 		}
 
+		.p1{
+			padding-left: 13em;
+			padding-right: 13em ;
+		}
 		.description {
 			padding-left : 3em;
 			padding-right: 3em;
 			color        : white;
-			font-size    : 17px;
+			font-size    : 12px;
 			text-align   : center;
 		}
 
@@ -506,6 +575,7 @@ footer {
 			padding-left : 18em;
 			padding-right: 18em;
 			font-size    : 1em;
+			color: #003B4C;
 		}
 
 		h6 {
@@ -545,7 +615,7 @@ footer {
 			padding-left : 7em;
 			padding-right: 7em;
 			color        : white;
-			font-size    : 20px;
+			font-size    : 15px;
 			text-align   : center;
 		}
 
