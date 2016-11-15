@@ -86,9 +86,6 @@ h1 {
 	color: black;
 }
 
-h2 {
-	text-align: center;
-}
 
 h3 {
 	color         : black;
@@ -162,6 +159,31 @@ h6 {
 	align-items    : center;
 }
 
+.banner-printmedia{
+	position       : relative;
+	margin-bottom  : 20px;
+	width          : 2500px;
+	height         : 100vh;
+	background     : url('../images/printmedia.jpg') no-repeat;
+	background-size: cover;
+	display        : flex;
+	flex-direction : column;
+	justify-content: center;
+	align-items    : center;
+}
+
+.banner-branding{
+	position       : relative;
+	margin-bottom  : 20px;
+	width          : 2500px;
+	height         : 100vh;
+	background     : url('../images/branding.jpg') no-repeat;
+	background-size: cover;
+	display        : flex;
+	flex-direction : column;
+	justify-content: center;
+	align-items    : center;
+}
 
 .nav {
 	font-family    : ArcaMajoraBold sans-serif;
@@ -209,7 +231,23 @@ a:link {
 	width: 100%;
 }
 
-.square {
+.squareuxui {
+	padding-bottom  : 2em;
+	margin-top      : -2em;
+	background     : url('../images/uxui-banner.jpg') no-repeat;
+	background-size: cover;
+}
+
+.squarepm {
+	background     : url('../images/printmedia.jpg') no-repeat;
+	background-size: cover;
+	padding-bottom  : 2em;
+	margin-top      : -2em;
+}
+
+.squareb {
+	background     : url('../images/branding.jpg') no-repeat;
+	background-size: cover;
 	background-color: black;
 	padding-bottom  : 2em;
 	margin-top      : -2em;
@@ -323,9 +361,11 @@ p {
 	text-align      : center;
 	margin          : 0;
 	padding         : 4rem;
+	padding-bottom:  15em;
 	background-color: white;
-	/*background: url(../images/stars.jpg) no-repeat;*/
-	background-size : cover;
+	background: url(../images/stars.jpg) no-repeat;
+	background-color: rgba(0, 0, 0, 0.9);
+	background-size :cover;
 }
 
 .socialmedia {
@@ -360,8 +400,22 @@ p {
 	margin-right: auto;
 }
 
+.artwork{
+	background-color: black;
+	padding-top:0;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom:0;
+}
+
 #letschat {
 	color: #12EDFF;
+	padding-top: 3em;
+}
+
+.contactme{
+	color: white;
 }
 
 #email {
@@ -429,13 +483,7 @@ footer {
 		width       : 100%;
 	}
 
-	h6 {
-		text-align: left;
-	}
 
-	h6 span {
-		color: blue;
-	}
 }
 
 @media only screen and (min-width: 25em) {
@@ -459,8 +507,25 @@ footer {
 	h1 {
 		padding-top: 1em;
 	}
+
 }
 @media only screen and (min-width: 38em) {
+
+	.parkhere{
+		max-width:  80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.artwork{
+		background-color: black;
+		padding-top:2em;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		padding-bottom: 3em;
+	}
+
 	.wordmark {
 		width: 80%;
 	}
@@ -491,7 +556,7 @@ footer {
 	h2 {
 		text-align : center;
 		margin-top : 5rem;
-		padding-top: 4rem;
+		padding-top: 1rem;
 	}
 
 	.h3 {
@@ -515,6 +580,12 @@ footer {
 		display      : block;
 	}
 
+	.title-description {
+		padding-left : 13em;
+		padding-right: 13em;
+		font-size    : 1em;
+		color: #003B4C;
+	}
 	.nav {
 		font-size  : 15px;
 		margin     : 0;
@@ -560,8 +631,8 @@ footer {
 		}
 
 		.p1{
-			padding-left: 13em;
-			padding-right: 13em ;
+			padding-left: 18em;
+			padding-right: 18em ;
 		}
 		.description {
 			padding-left : 3em;
@@ -572,8 +643,9 @@ footer {
 		}
 
 		.title-description {
-			padding-left : 18em;
-			padding-right: 18em;
+			text-align: justify left;
+			padding-left : 26em;
+			padding-right: 26em;
 			font-size    : 1em;
 			color: #003B4C;
 		}
