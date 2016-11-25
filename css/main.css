@@ -1,4 +1,6 @@
-@charset "utf-8";
+---
+---
+@charset  "utf-8";
 @-moz-viewport {
 	width: device-width;
 	scale: 1;
@@ -52,7 +54,6 @@ body {
 	font-family    : ArcaMajoraBold sans-serif;
 	margin         : 0;
 	padding        : 0;
-	/**	background: url("../images/basiccactus.jpg")no-repeat center center;**/
 	background-size: cover;
 }
 
@@ -64,17 +65,17 @@ header {
 }
 
 .wordmark {
-	top: 40%;
+	top  : 40%;
 	width: 70%;
 }
 
 h1 {
-	font-size : 1em;
-	color     : #12EDFF;
-	text-align: center;
-	z-index   : 1;
-	margin    : 0;
-	padding-left: 1rem;
+	font-size    : 1em;
+	color        : #12EDFF;
+	text-align   : center;
+	z-index      : 1;
+	margin       : 0;
+	padding-left : 1rem;
 	padding-right: 1rem;
 }
 
@@ -85,7 +86,6 @@ h1 {
 #black {
 	color: black;
 }
-
 
 h3 {
 	color         : black;
@@ -159,7 +159,7 @@ h6 {
 	align-items    : center;
 }
 
-.banner-printmedia{
+.banner-printmedia {
 	position       : relative;
 	margin-bottom  : 20px;
 	width          : 2500px;
@@ -172,7 +172,7 @@ h6 {
 	align-items    : center;
 }
 
-.banner-branding{
+.banner-branding {
 	position       : relative;
 	margin-bottom  : 20px;
 	width          : 2500px;
@@ -232,8 +232,8 @@ a:link {
 }
 
 .squareuxui {
-	padding-bottom  : 2em;
-	margin-top      : -2em;
+	padding-bottom : 2em;
+	margin-top     : -2em;
 	background     : url('../images/uxui-banner.jpg') no-repeat;
 	background-size: cover;
 }
@@ -241,13 +241,13 @@ a:link {
 .squarepm {
 	background     : url('../images/printmedia.jpg') no-repeat;
 	background-size: cover;
-	padding-bottom  : 2em;
-	margin-top      : -2em;
+	padding-bottom : 2em;
+	margin-top     : -2em;
 }
 
 .squareb {
-	background     : url('../images/branding.jpg') no-repeat;
-	background-size: cover;
+	background      : url('../images/branding.jpg') no-repeat;
+	background-size : cover;
 	background-color: black;
 	padding-bottom  : 2em;
 	margin-top      : -2em;
@@ -287,12 +287,12 @@ p {
 }
 
 .p1 {
-	padding-left: 3rem;
+	padding-left : 3rem;
 	padding-right: 3rem;
-	text-align: center;
-	padding-top: 0;
-	line-height: 1.8em;
-	color      : white;
+	text-align   : center;
+	padding-top  : 0;
+	line-height  : 1.8em;
+	color        : white;
 }
 
 .btn {
@@ -360,12 +360,11 @@ p {
 	display         : block;
 	text-align      : center;
 	margin          : 0;
-	padding         : 4rem;
-	padding-bottom:  15em;
+	padding         : 4rem 4rem 15em;
 	background-color: white;
-	background: url(../images/stars.jpg) no-repeat;
+	background      : url('../images/stars.jpg') no-repeat;
 	background-color: rgba(0, 0, 0, 0.9);
-	background-size :cover;
+	background-size : cover;
 }
 
 .socialmedia {
@@ -394,27 +393,27 @@ p {
 	font-family: sans-serif;
 }
 
-.parkhere{
-	max-width:  100%;
-	margin-left: auto;
+.parkhere {
+	max-width   : 100%;
+	margin-left : auto;
 	margin-right: auto;
 }
 
-.artwork{
+.artwork {
 	background-color: black;
-	padding-top:0;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	padding-bottom:0;
+	padding-top     : 0;
+	margin-left     : auto;
+	margin-right    : auto;
+	text-align      : center;
+	padding-bottom  : 0;
 }
 
 #letschat {
-	color: #12EDFF;
+	color      : #12EDFF;
 	padding-top: 3em;
 }
 
-.contactme{
+.contactme {
 	color: white;
 }
 
@@ -429,9 +428,9 @@ p {
 }
 
 .location {
-	text-align : center;
-	font-size  : 15px;
-	color      : lightgray;
+	text-align: center;
+	font-size : 15px;
+	color     : lightgray;
 }
 
 footer {
@@ -443,6 +442,12 @@ footer {
 	width           : 100vw;
 }
 
+h2.title-project {
+	color     : #003B4C;
+	text-align: center;
+	width     : 100%;
+}
+
 .myphoto {
 	max-width: 100%;
 }
@@ -451,7 +456,6 @@ footer {
 	position: relative;
 }
 @media only screen and (min-width: 25em) {
-
 	.portfoliolink {
 		padding-top: 8em;
 	}
@@ -462,10 +466,9 @@ footer {
 	}
 
 	.p1 {
-		font-size: 20px;
-		padding-left: 2em;
+		font-size    : 20px;
+		padding-left : 2em;
 		padding-right: 2em;
-		}
 	}
 
 	.square2 {
@@ -482,10 +485,7 @@ footer {
 		margin-right: auto;
 		width       : 100%;
 	}
-
-
 }
-
 @media only screen and (min-width: 25em) {
 	.wordmark {
 		padding-top: 10rem;
@@ -507,23 +507,21 @@ footer {
 	h1 {
 		padding-top: 1em;
 	}
-
 }
 @media only screen and (min-width: 38em) {
-
-	.parkhere{
-		max-width:  80%;
-		margin-left: auto;
+	.parkhere {
+		max-width   : 80%;
+		margin-left : auto;
 		margin-right: auto;
 	}
 
-	.artwork{
+	.artwork {
 		background-color: black;
-		padding-top:2em;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		padding-bottom: 3em;
+		padding-top     : 2em;
+		margin-left     : auto;
+		margin-right    : auto;
+		text-align      : center;
+		padding-bottom  : 3em;
 	}
 
 	.wordmark {
@@ -548,9 +546,9 @@ footer {
 		padding-top: 1em;
 	}
 
-	.p1{
-		padding-left: 8em;
-		padding-right: 8em ;
+	.p1 {
+		padding-left : 8em;
+		padding-right: 8em;
 	}
 
 	h2 {
@@ -584,8 +582,9 @@ footer {
 		padding-left : 13em;
 		padding-right: 13em;
 		font-size    : 1em;
-		color: #003B4C;
+		color        : #003B4C;
 	}
+
 	.nav {
 		font-size  : 15px;
 		margin     : 0;
@@ -620,83 +619,79 @@ footer {
 		max-width: 40%;
 		bottom   : 0;
 	}
-	@media only screen and (min-width:60em) {
-		h1 {
-			top      : 60%;
-			font-size: 2em;
-		}
-
-		.logo {
-			width: 3%;
-		}
-
-		.p1{
-			padding-left: 18em;
-			padding-right: 18em ;
-		}
-		.description {
-			padding-left : 3em;
-			padding-right: 3em;
-			color        : white;
-			font-size    : 12px;
-			text-align   : center;
-		}
-
-		.title-description {
-			text-align: justify left;
-			padding-left : 26em;
-			padding-right: 26em;
-			font-size    : 1em;
-			color: #003B4C;
-		}
-
-		h6 {
-			padding-left : 14em;
-			padding-right: 14em;
-			text-align   : center;
-		}
-
-		.myphoto {
-			max-width: 30%;
-		}
-		/*.myphoto {
-        width: 50%;
-        margin-right: auto;
-        margin-left: auto;
-        position: static;
-    }*/
+}
+@media only screen and (min-width:60em) {
+	h1 {
+		top      : 60%;
+		font-size: 2em;
 	}
-	@media only screen and (min-width: 80em) {
-		.wordmark {
-			width: 40%;
-		}
 
-		#email {
-			font-size: 20px;
-		}
-
-		h4 {
-			font-size: 1.3rem;
-		}
-
-		p {
-			font-size: 1.3rem;
-		}
-
-		.description {
-			padding-left : 7em;
-			padding-right: 7em;
-			color        : white;
-			font-size    : 15px;
-			text-align   : center;
-		}
-
-		h1 {
-			top      : 60%;
-			font-size: 2em;
-		}
-
-		.myphoto {
-			width: 400px;
-		}
+	.logo {
+		width: 3%;
 	}
+
+	.p1 {
+		padding-left : 18em;
+		padding-right: 18em;
+	}
+
+	.description {
+		padding-left : 3em;
+		padding-right: 3em;
+		color        : white;
+		font-size    : 12px;
+		text-align   : center;
+	}
+
+	.title-description {
+		text-align   : justify left;
+		padding-left : 26em;
+		padding-right: 26em;
+		font-size    : 1em;
+		color        : #003B4C;
+	}
+
+	h6 {
+		padding-left : 14em;
+		padding-right: 14em;
+		text-align   : center;
+	}
+
+	.myphoto {
+		max-width: 30%;
+	}
+}
+@media only screen and (min-width: 80em) {
+	.wordmark {
+		width: 40%;
+	}
+
+	#email {
+		font-size: 20px;
+	}
+
+	h4 {
+		font-size: 1.3rem;
+	}
+
+	p {
+		font-size: 1.3rem;
+	}
+
+	.description {
+		padding-left : 7em;
+		padding-right: 7em;
+		color        : white;
+		font-size    : 15px;
+		text-align   : center;
+	}
+
+	h1 {
+		top      : 60%;
+		font-size: 2em;
+	}
+
+	.myphoto {
+		width: 400px;
+	}
+}
