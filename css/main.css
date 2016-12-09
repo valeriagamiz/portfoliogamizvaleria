@@ -555,7 +555,7 @@ h2.title-project {
 	.sadcactus{
 		display: block;
 	  margin: auto;
-	  width: 20%;
+	  width: 28%;
 		padding-top: 18em;
 	}
 
@@ -584,14 +584,14 @@ h2.title-project {
 	.sadcactus{
 		display: block;
 	  margin: auto;
-	  width: 35%;
+	  width: 20%;
 		padding-top: 6em;
 	}
 
 	#error{
 	font-size: 2em;
 	}
-	
+
 	.chill {
 		font-size: 2em;
 	}
