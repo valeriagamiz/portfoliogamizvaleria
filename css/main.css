@@ -545,6 +545,7 @@ h2.title-project {
 		padding-top: 18em;
 	}
 
+
 	.wordmark {
 		padding-top: 10rem;
 	}
@@ -573,6 +574,7 @@ h2.title-project {
 	  width: 20%;
 		padding-top: 6em;
 	}
+
 
 	#error{
 	font-size: 2em;
@@ -652,8 +654,8 @@ h2.title-project {
 	}
 
 	.title-description {
-		padding-left : 13em;
-		padding-right: 13em;
+		padding-left : 9em;
+		padding-right: 9em;
 		font-size    : 1em;
 		color        : #003B4C;
 	}
@@ -718,8 +720,8 @@ h2.title-project {
 
 	.title-description {
 		text-align   : justify left;
-		padding-left : 26em;
-		padding-right: 26em;
+		padding-left : 23em;
+		padding-right: 23em;
 		font-size    : 1em;
 		color        : #003B4C;
 	}
