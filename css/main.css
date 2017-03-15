@@ -64,10 +64,22 @@ header {
 	z-index         : 1000;
 }
 
-.video{
+.video {
 	max-width: 100%;
- 	height: auto;
-	margin: 0 auto;
+	width: 100vw;
+	background: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.video iframe {
+	width: 100%;
+}
+
+.blackbackground {
+	background-color: black;
 }
 
 .wordmark {
