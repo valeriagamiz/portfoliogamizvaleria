@@ -476,11 +476,12 @@ footer {
 }
 
 h2.title-project {
-	color     : #12EDFF;
-	text-shadow: .3px .3px #2F797F;
+	color     : #003B4C;
+	/**text-shadow: .3px .3px #2F797F;*/
 	text-align: center;
 	width     : 100%;
 }
+
 
 .myphoto {
 	max-width: 100%;
